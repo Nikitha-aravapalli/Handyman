@@ -1,0 +1,23 @@
+.image {
+  height: 300px;
+  width: 400px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.slider {
+  position: relative;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  overflow: hidden;
+}
+
+.images {
+  display: flex;
+  width: 100%;
+}

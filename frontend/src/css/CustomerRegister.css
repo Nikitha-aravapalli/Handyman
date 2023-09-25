@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.form-container {
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.error {
+  border-color: red;
+}
+.errorMsg {
+  color: red;
+}
+h2 {
+  text-align: center;
+}

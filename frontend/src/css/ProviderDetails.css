@@ -1,0 +1,80 @@
+h2 {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+}
+.divcontainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.detailscontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  place-items: center;
+  background-color: white;
+  height: 87vh;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+@media screen and (max-width: 600px) {
+  .detailscontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    place-items: center;
+    background-color: white;
+    height: 87vh;
+    border-radius: 10px;
+  }
+}
+.detailscontainer label {
+  text-align: left;
+  padding: 0.25rem;
+  margin-top: 10%;
+}
+.element1 {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: white;
+  margin: 20px;
+  border-color: 1px solid black;
+}
+.elemtent2 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.element3 {
+  text-align: center;
+  align-items: center;
+}
+.element3 label {
+  text-align: left;
+}
+.element1 img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.form-item {
+  padding: 10px;
+}
+.editButton {
+  background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 20px;
+  height: 50px;
+  width: 90%;
+}
+label-item {
+  float: left;
+}

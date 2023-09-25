@@ -1,0 +1,30 @@
+.list-item{
+    background-color:white;
+    padding:5px;
+    margin:20px;
+    width:auto;
+    list-style:none;
+    height:45vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.list-item:hover{
+    transform: scale(1.1);
+}
+.Providers{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+    margin:20px;
+}
+.list-span{
+    /*float:left;*/
+    color:darkcyan;
+    font-size:18px;
+}
+
+.request{
+    float:right;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+    padding:10px;
+    margin:10px;
+    border-radius:10px;
+}
