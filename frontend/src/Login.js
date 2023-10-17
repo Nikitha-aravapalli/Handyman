@@ -12,6 +12,7 @@ export const Login = ({ collection, endpoint }) => {
   const [password1, setPassword] = useState("");
   const [userResult, setuserResult] = useState("");
   const [passResult, setpassResult] = useState("");
+  //const [show, setShow] = useState(false);
   const navigate = useNavigate();
   const handleForgot = (e) => {
     e.preventDefault();
@@ -62,6 +63,9 @@ export const Login = ({ collection, endpoint }) => {
   } else {
     console.log("no token");
   }
+  /*const handleshow = () => {
+    setShow(!show);
+  };*/
 
   return (
     <div className="home">
@@ -81,8 +85,19 @@ export const Login = ({ collection, endpoint }) => {
             {userResult}
           </small>
           <label htmlFor="password">Password</label>
+          {/*<input
+            type={show ? "text" : "password"}
+            value={password1}
+            placeholder="********"
+            name="password"
+            id="password"
+            onChange={(e) => setPassword(e.target.value)}
+          ></input>
+          <label id="show" onClick={handleshow}>
+            show
+  </label>*/}
           <input
-            type="password"
+            type={"password"}
             value={password1}
             placeholder="********"
             name="password"

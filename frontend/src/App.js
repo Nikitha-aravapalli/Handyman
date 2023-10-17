@@ -26,6 +26,9 @@ import { Practise } from "./Practise";
 import { Home1 } from "./Home1.js";
 import { Home2 } from "./Home2.js";
 import { Slider } from "./Slider.js";
+import { About_providers } from "./About_providers.js";
+import { About_customers1 } from "./About_customers1.js";
+import { Contact } from "./Contact";
 
 export const store = createContext();
 
@@ -40,10 +43,7 @@ function App() {
         <store.Provider value={[token, setToken]}>
           <Router>
             <Routes>
-              <Route
-                path="/home"
-                element={<Home onSetUser={setUserType}></Home>}
-              />
+              <Route path="/" element={<Home onSetUser={setUserType}></Home>} />
               <Route
                 path="/login"
                 element={
@@ -102,6 +102,15 @@ function App() {
               <Route path="/home1" element={<Home1></Home1>} />
               <Route path="/home2" element={<Home2></Home2>} />
               <Route path="/slider" element={<Slider></Slider>} />
+              <Route
+                path="/about"
+                element={<About_providers></About_providers>}
+              />
+              <Route
+                path="/about1"
+                element={<About_customers1></About_customers1>}
+              />
+              <Route path="/contact" element={<Contact></Contact>} />
             </Routes>
           </Router>
         </store.Provider>
